@@ -1,6 +1,7 @@
 # vagrant-mssql-express
 
-A Windows Server 2008 R2 VM with SQL Server Express 2008 R2 SP2 powered by Vagrant.
+A Windows Server 2012 R2 VM with SQL Server Express 2014 powered by Vagrant.
+This is a fork of [https://github.com/fgrehm/vagrant-mssql-express](https://github.com/fgrehm/vagrant-mssql-express)
 
 ## Requirements
 
@@ -15,18 +16,16 @@ A Windows Server 2008 R2 VM with SQL Server Express 2008 R2 SP2 powered by Vagra
 * The box is not activated. It has been created for testing and evaluation
   purposes only. Use of this machine for greater than 30 days will require a
   full license either via MSDN or your local Microsoft Reseller.
-* The box has been created with [packer.io](http://www.packer.io/) using the
-  templates made available [here](https://github.com/opentable/packer-images).
 
-More information can be found on the [box page at Vagrant Cloud](https://vagrantcloud.com/opentable/boxes/win-2008r2-standard-amd64-nocm).
+More information can be found on the [box page at Atlas](https://atlas.hashicorp.com/opentable/boxes/win-2012r2-standard-amd64-nocm).
 
 ## Usage
 
 ```sh
-git clone https://github.com/fgrehm/vagrant-mssql-express.git
+git clone https://github.com/leezu/vagrant-mssql-express.git
 cd vagrant-mssql-express
 # Download SQL Server with Tools installer
-wget http://download.microsoft.com/download/0/4/B/04BE03CD-EAF3-4797-9D8D-2E08E316C998/SQLEXPRWT_x64_ENU.exe
+wget http://download.microsoft.com/download/E/A/E/EAE6F7FC-767A-4038-A954-49B8B05D04EB/ExpressAndTools%2064BIT/SQLEXPRWT_x64_ENU.exe
 vagrant up
 # Get a coffee as it will take a while for it to finish provisioning
 ```
